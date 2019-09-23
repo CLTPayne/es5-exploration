@@ -15,3 +15,10 @@ const keepCharGreaterThanC = char => keepGreatestChar('c', char)
 const result3 = keepGreatestChar('y', 'b')
 const result4 = keepCharGreaterThanC('y') 
 console.log({ result3, result4 }) // { result3: 'y', result4: 'y' }
+  
+const greatestCharInArray =
+  array => array.reduce(keepGreatestChar, 'a')
+
+const result5 = greatestCharInArray(['a', 'b', 'c', 'd'])
+
+console.log({ result5 })
